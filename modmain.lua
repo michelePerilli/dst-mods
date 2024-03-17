@@ -4,4 +4,4 @@ local postinit_prefab = {
     "nightmare-enhancement-kit",
     "walter-rebalance"
 }
-for _, v in pairs(postinit_prefab) do modimport("" .. v .."/all-all-modmain.lua") end
+for _, v in pairs(postinit_prefab) do modimport("" .. v .."/all-modmain.lua") end
