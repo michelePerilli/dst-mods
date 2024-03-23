@@ -1,5 +1,6 @@
 local prefabs = {
     ["armors"] = {
+        "armorbramble",
         "armordragonfly",
         "armorgrass",
         "armormarble",
@@ -7,10 +8,27 @@ local prefabs = {
         "beehat",
         "cookiecutterhat",
         "footballhat",
-        "wathgrithrhat"
+        "wathgrithrhat",
+        "woodcarvedhat"
+    },
+    ["nature"] = {
+        "flower"
+    },
+    ["tools"] = {
+        "axe",
+        "hammer",
+        "hoe",
+        "multitool",
+        "pickaxe",
+        "sewingkit",
+        "shovel",
+        "torch"
     },
     ["weapons"] = {
-
+        "boomerang",
+        "hambat",
+        "thuleciteclub",
+        "whip"
     }
 }
 

@@ -1,4 +1,4 @@
-GLOBAL.TUNING.ARMOR_COOKIECUTTERHAT = 450
+GLOBAL.TUNING.ARMOR_COOKIECUTTERHAT = 600
 GLOBAL.TUNING.ARMOR_COOKIECUTTERHAT_ABSORPTION = .6
 
 local oldonequipfn
@@ -7,7 +7,7 @@ local oldonunequipfn
 local newonequip = function(inst, owner)
     oldonequipfn(inst, owner)
     inst.thorns = function(attacked, data)
-        local damage = 10 + (attacked.components.health.currenthealth * .03)
+        local damage = 3 + (attacked.components.health.currenthealth * .05)
         data.attacker.components.combat:GetAttacked(owner, damage, inst, nil, nil)
     end
 
