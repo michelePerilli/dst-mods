@@ -7,6 +7,7 @@ local prefabs = {
         "armorwood",
         "beehat",
         "cookiecutterhat",
+        "dragonflyhats",
         "footballhat",
         "wathgrithrhat",
         "woodcarvedhat"
@@ -34,7 +35,10 @@ local prefabs = {
 
 for folder, current_prefabs in pairs(prefabs) do
     for _, prefab in pairs(current_prefabs) do
-        print(prefab)
         modimport("prefabs/" .. folder .. "/" .. prefab .. ".lua")
     end
 end
+
+AddPlayerPostInit(function(inst)
+    inst:AddComponent("equipmentbonus")
+end)
